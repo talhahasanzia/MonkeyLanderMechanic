@@ -14,12 +14,12 @@ public class LanderControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+       // Debug.Log(rigid.velocity.y);
         if (Input.GetKey(KeyCode.UpArrow))
         {
 
             if (rigid.velocity.y < 5)
-                rigid.AddForce(new Vector2(0, 5));
+                rigid.AddForce(new Vector2(0, 2));
         
         
         
